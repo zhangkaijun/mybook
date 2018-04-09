@@ -10,7 +10,8 @@ create table userinfo(
    	create_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
    	updater VARCHAR(32),
    	update_time TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-)
+);
+ALTER TABLE userinfo RENAME TO book_userinfo;
 
 create table basic_data(
 	id INT primary key AUTO_INCREMENT,
@@ -22,4 +23,5 @@ create table basic_data(
    	create_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
    	updater VARCHAR(32),
    	update_time TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-)
+);
+ALTER TABLE basic_data RENAME TO book_basic_data;
