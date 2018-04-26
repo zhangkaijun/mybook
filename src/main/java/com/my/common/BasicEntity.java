@@ -3,7 +3,7 @@ package com.my.common;
 import java.sql.Date;
 
 public class BasicEntity {
-	private String id;
+	private int id;
 	private Date createTime;
 	private String creater = "auto";
 	private String updater;
@@ -29,17 +29,17 @@ public class BasicEntity {
 	public void setStatus(Integer status) {
 		this.status = status;
 	}
-	public String getId() {
-		return id;
-	}
-	public void setId(String id) {
-		this.id = id;
-	}
 	public String getUpdater() {
 		return updater;
 	}
 	public void setUpdater(String updater) {
 		this.updater = updater;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
 	}
 	public Date getUpdateTime() {
 		return updateTime;

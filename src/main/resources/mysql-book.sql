@@ -1,3 +1,6 @@
+CREATE DATABASE IF NOT EXISTS book DEFAULT CHARSET utf8 COLLATE utf8_general_ci;
+
+drop table userinfo;
 create table userinfo(
 	id INT primary key AUTO_INCREMENT,
 	username VARCHAR(16) NOT NULL,
@@ -7,21 +10,22 @@ create table userinfo(
 	fullname VARCHAR(32),
 	status INT default 0,
    	creater VARCHAR(32),
-   	create_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+   	createTime TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
    	updater VARCHAR(32),
-   	update_time TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+   	updateTime TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
-ALTER TABLE userinfo RENAME TO book_userinfo;
+select * from userinfo
 
-create table basic_data(
+drop table basicData;
+create table basicData(
 	id INT primary key AUTO_INCREMENT,
-	basic_value VARCHAR(32) NOT NULL,
-	user_id INT,
-	parent_id INT,
+	basicValue VARCHAR(32) NOT NULL,
+	userId INT,
+	parentId INT,
 	status INT default 0,
    	creater VARCHAR(32),
-   	create_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+   	createTime TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
    	updater VARCHAR(32),
-   	update_time TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+   	updateTime TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
-ALTER TABLE basic_data RENAME TO book_basic_data;
+SELECT * FROM basicData

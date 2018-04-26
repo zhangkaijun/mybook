@@ -8,18 +8,12 @@ import com.my.common.BasicEntity;
  */
 public class Userinfo extends BasicEntity{
 
-	private String userName;
+	private String username;
 	private String password;
 	private String email;
 	private String cellphone;
 	private String fullName;
 	
-	public String getUserName() {
-		return userName;
-	}
-	public void setUserName(String userName) {
-		this.userName = userName;
-	}
 	public String getPassword() {
 		return password;
 	}
@@ -43,6 +37,12 @@ public class Userinfo extends BasicEntity{
 	}
 	public void setFullName(String fullName) {
 		this.fullName = fullName;
+	}
+	public String getUsername() {
+		return username;
+	}
+	public void setUsername(String username) {
+		this.username = username;
 	}
 	
 	
