@@ -8,7 +8,7 @@ public class BasicEntity {
 	private String creater = "auto";
 	private String updater;
 	private Date updateTime;
-	private Integer status = 0;
+	private Integer status = StatusEnum.Enable.value();
 	
 	public Date getCreateTime() {
 		return createTime;
