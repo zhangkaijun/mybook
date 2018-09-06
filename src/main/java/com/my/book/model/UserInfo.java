@@ -1,4 +1,5 @@
-package com.my.book.entity;
+package com.my.book.model;
+
 
 import com.my.common.BasicEntity;
 
@@ -6,13 +7,13 @@ import com.my.common.BasicEntity;
  * @author zhangkj
  *
  */
-public class Userinfo extends BasicEntity{
+public class UserInfo extends BasicEntity{
 
 	private String username;
 	private String password;
 	private String email;
 	private String cellphone;
-	private String fullName;
+	private String fullname;
 	
 	public String getPassword() {
 		return password;
@@ -32,17 +33,17 @@ public class Userinfo extends BasicEntity{
 	public void setCellphone(String cellphone) {
 		this.cellphone = cellphone;
 	}
-	public String getFullName() {
-		return fullName;
-	}
-	public void setFullName(String fullName) {
-		this.fullName = fullName;
-	}
 	public String getUsername() {
 		return username;
 	}
 	public void setUsername(String username) {
 		this.username = username;
+	}
+	public String getFullname() {
+		return fullname;
+	}
+	public void setFullname(String fullname) {
+		this.fullname = fullname;
 	}
 	
 	

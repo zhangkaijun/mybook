@@ -5,7 +5,7 @@ import java.sql.Date;
 public class BasicEntity {
 	private int id;
 	private Date createTime;
-	private String creater = "auto";
+	private String creater;
 	private String updater;
 	private Date updateTime;
 	private Integer status = StatusEnum.Enable.value();

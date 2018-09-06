@@ -1,4 +1,4 @@
-package com.my.book.entity;
+package com.my.book.model;
 
 import java.util.List;
 
