@@ -1,11 +1,12 @@
 package com.my.book.mapper;
 
-import java.util.List;
-
+import org.apache.catalina.core.ApplicationContext;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import com.alibaba.fastjson.JSON;
@@ -31,9 +32,12 @@ public class UserMapperTest {
 	
 	@Test
 	public void getById() {
-		UserInfo entity = userinfoMapper.findById(9);
-		List<UserInfo> entitys = userinfoMapper.findByUsername("admin");
-		System.out.println(JSON.toJSON(entitys));
+		//userService.test();
+		//testService.test();
+		UserInfo entity = userinfoMapper.selectByPrimaryKey(9);
+		
+		//UserInfo entity = userService.selectByPrimaryKey(9);
+		System.out.println(JSON.toJSON(entity));
 		
 	}
 	
