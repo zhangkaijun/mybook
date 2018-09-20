@@ -29,5 +29,4 @@ public class MyController {
 		String msg = "Hello,book system";
 		return msg;
 	}
-	
 }
