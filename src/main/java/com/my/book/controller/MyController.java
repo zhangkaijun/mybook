@@ -30,7 +30,4 @@ public class MyController {
 		return msg;
 	}
 	
-	
-	
-	
 }
